@@ -20,7 +20,7 @@ def add_new_todo():
     print("Incoming request with the following body", request_body)
     return jsonify(todos)
 
-
+#en realidad no está importando nada de request data
 @app.route('/todos/<int:position>', methods=['DELETE'])
 def delete_todo(position):
     print("This is the position to delete: ",position)
